@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-      crossorigin=""
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Frontend Mentor | IP Address Tracker</title>
-    <script
-      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-      crossorigin=""
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="title">IP Address Tracker</h1>
-      <div class="search-div">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search for any IP address or domain"
-        />
-        <button class="btn">Search</button>
-      </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+			integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+			crossorigin=""
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Frontend Mentor | IP Address Tracker</title>
+		<script
+			src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+			integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+			crossorigin=""
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="title">IP Address Tracker</h1>
+			<div class="search-div">
+				<input
+					type="search"
+					name="search"
+					id="search"
+					placeholder="Search for any IP address or domain"
+				/>
+				<button class="btn">Search</button>
+			</div>
+		</header>
 
-    <main class="main">
-      <div class="container">
-        <div class="column">
-          <h2 class="sub-title">IP Address</h2>
-          <p class="response" id="ip"></p>
-        </div>
-        <div class="column">
-          <h2 class="sub-title">Location</h2>
-          <p class="response" id="location"></p>
-        </div>
-        <div class="column">
-          <h2 class="sub-title">Timezone</h2>
-          <p class="response" id="timezone"></p>
-        </div>
-        <div class="column">
-          <h2 class="sub-title">UTC ISP</h2>
-          <p class="response" id="isp"></p>
-        </div>
-      </div>
-      <div class="map" id="map"></div>
-    </main>
-    <!-- <div class="attribution">
+		<main class="main">
+			<div class="container">
+				<div class="column">
+					<h2 class="sub-title">IP Address</h2>
+					<p class="response" id="ip"></p>
+				</div>
+				<div class="column">
+					<h2 class="sub-title">Location</h2>
+					<p class="response" id="location"></p>
+				</div>
+				<div class="column">
+					<h2 class="sub-title">Timezone</h2>
+					<p class="response" id="timezone"></p>
+				</div>
+				<div class="column">
+					<h2 class="sub-title">UTC ISP</h2>
+					<p class="response" id="isp"></p>
+				</div>
+			</div>
+			<div class="map" id="map"></div>
+		</main>
+		<!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
 
-    <script src="./src/index.js" type="module"></script>
-    <script src="./src/utils.js" type="module"></script>
-  </body>
+		<script src="./src/index.js" type="module"></script>
+		<script src="./src/utils.js" type="module"></script>
+	</body>
 </html>
