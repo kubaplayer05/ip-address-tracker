@@ -111,11 +111,21 @@ html {
 }
 
 @media only screen and (max-width: 558px) {
+
+  .header {
+    padding: 20px 0 10px 0;
+  }
+
 	.container {
+    top: -140px;
 		grid-template-columns: 1fr;
     padding: 20px;
 		text-align: center;
 	}
+
+  #search {
+    width: 250px;
+  }
 
 	.response {
 		margin: 10px 0;
@@ -125,6 +135,7 @@ html {
     display: flex;
     justify-content: center;
 		height: 35px;
-    width: 100%;
+    margin: auto;
+    margin-top: 20px;
 	}
 }
